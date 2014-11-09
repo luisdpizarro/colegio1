@@ -60,7 +60,7 @@ public class arreglos {
 			String estud = (in.readLine());
 				
 			int prom;
-			for(int i=0;i<cantEst;i++){
+			for(int j=0;j<cantEst;j++){
 				if(cantEst[i].equals(estud)){
 					prom=promedios[j];
 					break;
