@@ -8,7 +8,6 @@ public class arreglos {
 	   	
 	   	int cantEst,
 	   	    cantNotas,
-	   		prom,
 	   	    totalnota = 0;
 	   	
 	   
@@ -60,8 +59,14 @@ public class arreglos {
 			out.println("Digite Nombre del estudiante para cononcer el promedio");
 			String estud = (in.readLine());
 				
-			int pos=nomEstus.indexOf(estud);
-			int prom=promedios[pos];
+			int prom;
+			for(int i=0;i<cantEst;i++){
+				if(cantEst[i].equals(estud)){
+					prom=promedios[j];
+					break;
+				}
+			}
+			
 			out.println("El promedio de "+estud" es de "+prom+".");
 				
 		   	/*prom = totalnota/cantNotas;
